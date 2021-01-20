@@ -1,22 +1,17 @@
-global num
-global zero
-global one
+count = int(input())
+num =   []
+dp = [0,1,1]
 
-num = input()
-zero = 0
-one = 0
+for i in range(3,42):
+    dp.append(dp[i-1] + dp[i-2])
 
-def fibo(n ):
-    global zero
-    global one
-    if n == 0:
-        zero += 1
-        return 0
+for i in range(count):
+    num.append(int(input()))
+
+for n in num:
+    if n ==0:
+        print("1 0")
     elif n == 1:
-        one += 1
-        return 1
+        print("0 1")
     else:
-        return fibo(n - 1) + fibo(n-2)
-
-fibo(int(num))
-print("%s %s"%(zero,one))
+        print("%s %s"%(dp[n-1],dp[n]))
