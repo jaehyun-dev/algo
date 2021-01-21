@@ -1,2 +1,4 @@
-for i in range(5,-1,-1):
-    print(i)
+a = [1,2,3]
+
+if 1 in a:
+    print(a)
