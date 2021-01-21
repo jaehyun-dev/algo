@@ -23,6 +23,7 @@ for i in range(T):      #-- 테스트케이스 수만큼 돌며 실행
         else:
             b_path[from_p] = to_p
 
+    print(b_path)
     destiny = int(input())
     if destiny  in b_path.keys():
         while 1:
@@ -37,3 +38,8 @@ for i in range(T):      #-- 테스트케이스 수만큼 돌며 실행
     
 for r in result_arr:
     print(r)
+
+
+#-- import sys
+#-- sys.stdin.readline() sys.stdout.write()를 쓰면 실행속도 줄어듬 
+#-- queue python으로  해보기 
