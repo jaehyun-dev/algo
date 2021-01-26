@@ -1,10 +1,15 @@
 import sys
 
-count = 0
-N, K = sys.stdin.readline().rstrip()
+n, k = map(int, sys.stdin.readline().split())
+result = 0
+while True:
+    target = (n // k) * k
+    result += n-target
+    n = target
+    if n < k:
+        break
+    result += 1
+    n //= k
 
-while N <= K:
-    N %= K
-    count += 1
-
-print(count + N )
+result += n -1
+print( result )
