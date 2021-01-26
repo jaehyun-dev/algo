@@ -1,12 +1,14 @@
-T = int(input())        #-- 테스트케이스 개수
+import sys
+
+T = int(sys.stdin.readline())        #-- 테스트케이스 개수
 m_time  = {}            #-- make_time -> n번빌딩 : 짓는데 걸리는 시간
 b_path  = {}            #-- building_path -> to : from 
 start = 1000
 result_arr  = []
 result = 0
 for i in range(T):      #-- 테스트케이스 수만큼 돌며 실행
-    N, K        = input().split()
-    b_time      = input().split()
+    N, K        = sys.stdin.readline().split()
+    b_time      = sys.stdin.readline().split()
     for j in range(int(N)):
         m_time[j+1] = int(b_time[j])
     for k in range(int(K)):

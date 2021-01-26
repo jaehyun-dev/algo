@@ -1,3 +1,6 @@
+import sys
 
-if 1 in a:
-    print(a)
+a = 0
+a = sys.stdin.readline().split()
+b = a[0]
+print(a)
