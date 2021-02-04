@@ -1,8 +1,3 @@
-import sys
-
-n, m = map(int, sys.stdin.readline().split())
-arr = []
-for i in range(n):
-    arr.append( list(map(int,sys.stdin.readline().rstrip())))
-
+arr = [1,2,5,4,3]
+arr = sorted(arr)
 print(arr)
