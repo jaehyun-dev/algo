@@ -1,1 +1,3 @@
-In my super new macbook Pro first Push!!
+arr = [ 1,2, 5 , 6]
+
+print(max(arr))
